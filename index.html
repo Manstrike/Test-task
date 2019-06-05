@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Case</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="./main.js"></script>
+        <style>
+            .input {
+                display: flex;
+                flex-direction: column,
+            }
+        </style>
+    </head>
+
+    <body>
+        <form id="root-form">
+            <div id="button-div">
+                <button type="button" id="add-button">Add input</button>
+            </div>
+            <p>Select mode:</p>
+            <div id="radio-div">
+                <input type="radio" id="render-mode-1"
+                       name="render" value="horizontal" checked>
+                <label for="render-mode-1">horizontal</label>
+                <input type="radio" id="render-mode-2"
+                       name="render" value="vertical">
+                <label for="render-mode-2">vertical</label>
+            </div>
+        </form>
+
+        <div style="overflow: auto;">
+            <canvas id="tiles"></canvas>
+        </div>
+
+
+        
+    </body>
+</html>
